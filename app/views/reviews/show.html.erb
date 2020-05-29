@@ -1,0 +1,20 @@
+<div class ="review_form">
+<h1>Reviewer Name: <%= @review.author %></h1>
+<h2>Product: <%= @product.name %></h2>
+<h2>Rating:<%= @review.rating %></h2>
+
+<h4><%= @review.author.to_str.titleize()%> gave this product a <%= @review.rating.to_i%> star. 
+<h4>Thier review on <%=@product.name.to_str.titleize()%> is below: </h4>
+<h5><%= @review.content_body%></h5>
+
+
+<p><%= link_to "Edit Review", edit_product_review_path(@product, @review) %></p>
+<p><%= link_to "Delete Review", product_review_path(@product, @review),
+                        :data => {:confirm => "Are you sure?",
+                                       :method => "delete"} %></p>
+
+<p><%= link_to "Return to Product", product_path(@product) %></p>
+
+<p> <%= link_to "Create a new Review", new_review_path %></p>
+
+</div>
