@@ -6,20 +6,31 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Product.destory_all
-# Review.destory_all
+
 
 #-------------Faker for Products ----------------->
-50.times do |index|
-  product = Product.create!(name: Faker::Food.ingredient,
+Product.destroy_all
+
+50.times do 
+    Product.create!(name: Faker::Food.ingredient,
     cost: Faker::Number.decimal(l_digits: 2),
     country_of_origin: Faker::Address.country)
-    # image_url: "food.png")
-  
 
-
-end
- 
+end 
 p "Created #{Product.count} products"
 
-#------------Faker for Reviews ----------------------->
+
+ #------------Faker for Reviews ----------------------->
+Review.destroy_all
+
+250.times do 
+     products = Product.all
+     Review.create!(author: Faker::FunnyName.name_with_initial,
+     content_body: Faker::Restaurant.review[0..249],
+     rating: Faker::Number.between(from: 1, to: 5),
+     product_id: products.sample.id)
+end
+
+ 
+p "Created #{Review.count} reviews."
+
