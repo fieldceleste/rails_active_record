@@ -30,13 +30,15 @@
 * _You will need to run `bundle install` after each new Gem added to project._
 * _Make sure to check which Ruby version you are running by typing `$ ruby -v`_
 * _Make sure to check what Postgres version by typing `postgres --version` in terminal._
+* _To start the database run `postgres` in the background terminal._
+* _In a seperate terminal type `psql`, to start SQL._
 * _To run a test using Rspec, type `rpsec` into the root page of the project._
-* DATABASE INSTRUCTIONS - from the root directory of this project, run these commands:
+* DATABASE INSTRUCTIONS - from the root directory of this project, run these commands to start new database:
 *         `rake db:create`
 *         `rake db:migrate`
 *        `rake db:test:prepare`
 
-* _To view project in browser type in terminal, `ruby app.rb`._
+* _To view project in browser type in terminal, `rails s`._
 * _Navigate to localhost:3000_
 
 
@@ -48,17 +50,17 @@ _If you have issues, questions, ideas, or concerns, please contact (fieldceleste
 
 ## Technologies Used/ System Dependencies
 
-* _Ruby_
-* _Sinatra_
-* _ActiveRecord_
-* _Git_
-* _GitHub_
-* _Rspec_
-* _Pry_
-* _Capybara_
-* _RubyGems_
-* _postgres_
-* _psql_
+* >_Ruby_
+* >_Sinatra_
+* >_ActiveRecord_
+* >_Git_
+* >_GitHub_
+* >_Rspec_
+* >_Pry_
+* >_Capybara_
+* >_RubyGems_
+* >_postgres_
+* >_psql_
 
 ### License
 ## Legal
