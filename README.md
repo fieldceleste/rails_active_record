@@ -65,6 +65,8 @@ _If you have issues, questions, ideas, or concerns, please contact (fieldceleste
 * >_RubyGems_
 * >_postgres_
 * >_psql_
+* >_SASS_
+* >_Bootstrap_
 
 ### License
 ## Legal
