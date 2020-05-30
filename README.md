@@ -25,7 +25,7 @@
 
 
 ## Future Features
-* _Be able to add in flash messges, scopes to display the products information, and customize the amount of product results._
+* _Be able to paginate products, scopes to display the products information, and show the average rating for the reviews._
 
 ## Setup/Installation Requirements
 
