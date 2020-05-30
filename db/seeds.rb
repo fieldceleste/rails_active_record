@@ -11,7 +11,7 @@
 #-------------Faker for Products ----------------->
 Product.destroy_all
 
-50.times do 
+50.times do |index|
     Product.create!(name: Faker::Food.ingredient,
     cost: Faker::Number.decimal(l_digits: 2),
     country_of_origin: Faker::Address.country)
@@ -23,7 +23,7 @@ p "Created #{Product.count} products"
  #------------Faker for Reviews ----------------------->
 Review.destroy_all
 
-250.times do 
+250.times do |index|
      products = Product.all
      Review.create!(author: Faker::FunnyName.name_with_initial,
      content_body: Faker::Restaurant.review[0..249],

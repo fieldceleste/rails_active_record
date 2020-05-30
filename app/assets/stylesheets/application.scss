@@ -1,4 +1,65 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+  color: black;
+  font-family: 'Indie Flower', serif;
+  background: url('https://openharvest.coop/wp-content/uploads/2018/09/OH-background-01.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
+h1 {
+  font-size: 48px;
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+.p {
+
+  margin-right: 300px;
+  margin-left: 300px;
+  text-align: center;
+
+} 
+.links {
+  margin-left: 500px;
+  padding-bottom: 20px;
+}
+h4 {
+  font-family: 'Kalam', cursive;
+}
+
+a {
+  color: #e6edf5;
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+}
+.sub {
+  text-align: center;
+  font-size: 25px;
+}
+
+.container {
+  padding-top: 50px;
+  margin-top: 40px;
+  background-color: rgb(144, 163, 118);
+}
+
+.products {
+  font-size: 26px;
+}
+
+img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+input {
+  color: black;
+}

@@ -1,19 +1,19 @@
+<div class= "container">
 <h1>Hello, and Welcome to Celeste's Specialty Foods!</h1>
 
-<h3>Here at Celeste's Specialty Foods, we are dedicated to providing excellent customer service, and honest real reviews on all products</h3>
-
+<br>
 <div class = "p">
 <p>Celeste's Specialty Foods, has also become the go-to place for wheat and gluten free food. We have the largest selection of gluten free products in the Protland area and beyond. Ceelste's Specialty Foods, is a natural food and supplement store that has been in Portland metro area for 42 years.  We are home to over 6000 square feet of natural and organic groceries, vitamins, natural remedies and body care products. When you add organic produce, dairy, frozen food, beer and wine, and hundreds of items for special diets, Celeste's Specialty Foods becomes your one stop shopping spot.</p>
 </div>
 
 
-<h3>See our most popular reviewed products below:</h3>
-
+<h2>See our most popular reviewed products below:</h2>
+<br>
 <%# // --------Most Reviewed Products------------------------> %>
-<div class= "container">
+
   <div class = "row">
    <div class =" col-md-4">
-    <p class ="reviews"> Most Reviewed Items</p>
+    <p class ="sub"><u>Most Reviewed Items</u></p>
       <% if @products_most_reviews.any? %>
         <ul>
           <% @products_most_reviews.each do |most_reviewed| %>
@@ -27,7 +27,7 @@
 <%# //-------------Recentley added products--------------------------> %>
       </div>
     <div class="col-md-4">
-      <p class="products">Recentley Added Products</p>
+      <p class="sub"><u>Recentley Added Products</u></p>
       <% if @products_most_recent.any? %>
         <ul>
           <% @products_most_recent.each do |most_recent| %>
@@ -43,7 +43,7 @@
 
     </div>
     <div class="col-md-4">
-      <p class="products_local">Locally Made Products</p>
+      <p class="sub"><u>Locally Made Products</u></p>
       <% if @products_locally_made.any? %>
         <ul>
           <% @products_locally_made.each do |local_products| %>
@@ -54,9 +54,15 @@
       <% else %>
         <p>There are currently no products made in the United States of America.</p>
       <% end %>
-    </div>
+       </div>
+   </div>
+   <div class="links">
+   <%= button_to "Create New Product", new_product_path %>
+<br>
+<%= button_to "View all Current Products", products_path %>
   </div>
 </div>
+  
 
-<p class="links"><%= link_to "Create New Product", new_product_path %></p>
-<p class="links"><%= link_to "View all Current Products", products_path %></p>
+
+   

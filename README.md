@@ -12,13 +12,16 @@
 | :-----|
 | Users should be able to add, update and delete new products. | √
 | Users should be able to add the name of the product, the cost, and the country of origin.|√
-| Users should be able to click an individual product to see its detail page.|
-| Page should have products titleized. |
-| Users should be able to add a review to a product.|
-| Page should show 50 products, and 250 reviews.|
-| Rating can only be a number 1-5 |
-| The review's content body should only be between 50-250 charcters. |
-| Users should be able to add a author, rating, and body to the review page.|
+| Users should be able to click an individual product to see its detail page.|√
+| Users should be able to see the three most reviewed products | √
+| User should be able to see recentley added products| √
+| User should be able to see locally made products| √
+| Page should have products titleized. |√
+| Users should be able to add a review to a product.|√
+| Page should show 50 products, and 250 reviews.|√
+| Rating can only be a number 1-5 |√
+| The review's content body should only be between 50-250 charcters. |√
+| Users should be able to add a author, rating, and body to the review page.|√
 
 
 ## Future Features
