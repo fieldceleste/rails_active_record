@@ -2,8 +2,9 @@
 <h1>Hello, and Welcome to Celeste's Specialty Foods!</h1>
 
 <br>
+<%= image_tag 'natural.png', id: 'natural', class: 'natural' %>
 <div class = "p">
-<p>Celeste's Specialty Foods, has also become the go-to place for wheat and gluten free food. We have the largest selection of gluten free products in the Protland area and beyond. Ceelste's Specialty Foods, is a natural food and supplement store that has been in Portland metro area for 42 years.  We are home to over 6000 square feet of natural and organic groceries, vitamins, natural remedies and body care products. When you add organic produce, dairy, frozen food, beer and wine, and hundreds of items for special diets, Celeste's Specialty Foods becomes your one stop shopping spot.</p>
+<p>Celeste's Specialty Foods, has also become the go-to place for wheat and gluten free food. We have the largest selection of gluten free products in the Protland area and beyond. Celeste's Specialty Foods, is a natural food and supplement store that has been in Portland metro area for 42 years.  We are home to over 6000 square feet of natural and organic groceries, vitamins, natural remedies and body care products. When you add organic produce, dairy, frozen food, beer and wine, and hundreds of items for special diets, Celeste's Specialty Foods becomes your one stop shopping spot.</p>
 </div>
 
 
@@ -56,12 +57,14 @@
       <% end %>
        </div>
    </div>
-   <div class="links">
-   <%= button_to "Create New Product", new_product_path %>
-<br>
-<%= button_to "View all Current Products", products_path %>
-  </div>
+  
+<div class="links"><%= link_to "Create New Product", new_product_path, class: 'button1' %>
 </div>
+<br>
+ <div class="links2"><%= link_to "View all Current Products", products_path, class: 'button2' %> 
+</div>
+
+ 
   
 
 

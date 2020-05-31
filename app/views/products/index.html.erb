@@ -1,8 +1,10 @@
-<div class ="product_form">
+<div class ="container">
+  <div class ="product_form">
+    <div class = "col-md-9">
 <h1>Products</h1>
 
 <% if @products.any? %>
-  <ul>
+  <ul class= "product_list">
     <% @products.each do |product| %>
       <li><%= link_to product.name, product_path(product) %></li>
     <% end %>
@@ -10,8 +12,12 @@
 <% else %>
   <p>There are no products yet.</p>
 <% end %>
+    </div>
+  </div>
 
-
-<p><%= link_to "Create new product", new_product_path %></p>
-<p><%= link_to "Home", root_path%></p>
+<div class ="links4"><%= link_to "Home", root_path, class: 'button2'%>
+</div>
+<br>
+<div class ="links3"><%= link_to "Create New Product", new_product_path, class: 'button1' %>
+</div>
 </div>
