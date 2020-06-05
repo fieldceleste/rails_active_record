@@ -8,7 +8,7 @@
 * _Be able to enter and save correct informtaion into the database, as well as have comprehensive validations and callbacks._
 
 ## User Stories
-|Specs|
+|User Features|
 | :-----|
 | Users should be able to add, update and delete new products. | √
 | Users should be able to add the name of the product, the cost, and the country of origin.|√
@@ -22,6 +22,13 @@
 | Rating can only be a number 1-5 |√
 | The review's content body should only be between 50-250 charcters. |√
 | Users should be able to add a author, rating, and body to the review page.|√
+|Admin Features|
+| :-----|
+| As an admin, I should be able to log in and log out of the application. |
+| As an admin, I should be able to add, update and delete products. |
+| As an admin, I should be able to add reviews.|
+| As an admin, I want to ensure that other users don't have access to CRUD functionality. |
+| As a user, I want to be able to create an account and add a review to a product. (A product can have many comments.) This is the only CRUD functionality a user can have. |
 
 
 ## Future Features
