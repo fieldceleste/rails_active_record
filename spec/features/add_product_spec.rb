@@ -18,3 +18,5 @@ describe "the add a product process" do
     expect(page).to have_content "Country of origin can't be blank"
   end
 end
+
+ 
