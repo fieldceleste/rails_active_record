@@ -24,9 +24,9 @@
 | Users should be able to add a author, rating, and body to the review page.|√
 |Admin Features|
 | :-----|
-| As an admin, I should be able to log in and log out of the application. |
-| As an admin, I should be able to add, update and delete products. |
-| As an admin, I should be able to add reviews.|
+| As an admin, I should be able to log in and log out of the application. |√
+| As an admin, I should be able to add, update and delete products. |√
+| As an admin, I should be able to add reviews.|√
 | As an admin, I want to ensure that other users don't have access to CRUD functionality. |
 | As a user, I want to be able to create an account and add a review to a product. (A product can have many comments.) This is the only CRUD functionality a user can have. |
 
