@@ -4,8 +4,6 @@ describe "the add a review process" do
   it "adds a new review" do
     test_product = Product.create(name: "Apple", cost: 3, country_of_origin: "Mexico", id: nil)
     #add user auth. spec here
-    # test_product.save
-    # id = test_product.id
     visit product_path(test_product)
     click_button 'Add a Review'
     fill_in 'Author', :with => 'Celeste'
@@ -15,10 +13,15 @@ describe "the add a review process" do
     expect(page).to have_content 'Celeste'
   end
 
-  # it "gives an error when no name is entered" do
-  #   visit new_product_path
-  #   click_on 'Create Product'
-  #   expect(page).to have_content "Name can't be blank"
-  #   expect(page).to have_content "Country of origin can't be blank"
-  # end
+  it "gives an error when field is left blank" do
+    test_product = Product.create(name: "Apple", cost: 3, country_of_origin: "Mexico", id: nil)
+    visit product_path(test_product)
+    click_button 'Add a Review'
+    click_button 'Create Review'
+    expect(page).to have_content "Author can't be blank"
+    expect(page).to have_content "Content body can't be blank"
+    expect(page).to have_content "Content body is too short (minimum is 50 characters)"
+    expect(page).to have_content "Rating can't be blank"
+    expect(page).to have_content "Rating is not a number"
+  end
 end
