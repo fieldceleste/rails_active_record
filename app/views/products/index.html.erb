@@ -18,6 +18,10 @@
 <div class ="links4"><%= link_to "Home", root_path, class: 'button2'%>
 </div>
 <br>
-<div class ="links3"><%= link_to "Create New Product", new_product_path, class: 'button1' %>
+<div class ="links3">
+  <% if current_user && current_user.admin %>
+<%= link_to "Create New Product", new_product_path, class: 'button1' %>
+<% end %>
 </div>
+
 </div>

@@ -8,11 +8,13 @@
 <br>
 <h5><p><%= @review.content_body%><p></h5>
 
+<% if current_user && current_user.admin %>
+  <p><%= link_to "Edit Review", edit_product_review_path(@product, @review) %></p>
 
-<p><%= link_to "Edit Review", edit_product_review_path(@product, @review) %></p>
-<p><%= link_to "Delete Review", product_review_path(@product, @review),
+  <p><%= link_to "Delete Review", product_review_path(@product, @review),
                         :data => {:confirm => "Are you sure?",
                                        :method => "delete"} %></p>
+ <% end %>
 
 <p><%= link_to "Return to Product", product_path(@product) %></p>
 

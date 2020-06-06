@@ -2,8 +2,9 @@ require 'rails_helper'
 
 describe "the add a review process" do
   it "adds a new review" do
+    user = User.create!(:email => 'celeste@aol.com', :password => 'hello1234567', :admin => 'true')
+    login_as(user, :scope => :user)
     test_product = Product.create(name: "Apple", cost: 3, country_of_origin: "Mexico", id: nil)
-    #add user auth. spec here
     visit product_path(test_product)
     click_button 'Add a Review'
     fill_in 'Author', :with => 'Celeste'
@@ -14,6 +15,8 @@ describe "the add a review process" do
   end
 
   it "gives an error when field is left blank" do
+    user = User.create!(:email => 'celeste@aol.com', :password => 'hello1234567', :admin => 'true')
+    login_as(user, :scope => :user)
     test_product = Product.create(name: "Apple", cost: 3, country_of_origin: "Mexico", id: nil)
     visit product_path(test_product)
     click_button 'Add a Review'
